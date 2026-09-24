@@ -5,7 +5,6 @@ from rag import(process_pdf,ask_questions)
 # Page configuration
 st.set_page_config(
     page_title="PDF RAG Chatbot",
-    page_icon="📄",
     layout="centered"
 )
 
@@ -56,7 +55,7 @@ if st.button("Ask Question"):
                 st.write(answer)    
 
                 #Retrived context
-                with st.expander("🔎 View Retrieved Chunks"):
+                with st.expander(" View Retrieved Chunks"):
 
                     for index,document in enumerate(
                         documents, start = 1
